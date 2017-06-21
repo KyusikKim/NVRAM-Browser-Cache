@@ -1,0 +1,7882 @@
+cscope 15 /qt/qt4.7.4/src/3rdparty/webkit/WebCore/platform/network/qt               0000049294
+	@AuthenticationChallenge.h
+
+25 #iâdeà
+Auth’tiÿtiÚCh®Ënge_h
+
+
+26 
+	#Auth’tiÿtiÚCh®Ënge_h
+
+
+	)
+
+28 
+	~"Auth’tiÿtiÚCh®ËngeBa£.h
+"
+
+30 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+32 şas 
+	cAuth’tiÿtiÚCh®Ënge
+ : 
+public
+ 
+Auth’tiÿtiÚCh®ËngeBa£
+ {
+
+33 
+public
+:
+
+34 
+Auth’tiÿtiÚCh®Ënge
+()
+
+38 
+Auth’tiÿtiÚCh®Ënge
+(cÚ¡ 
+PrÙeùiÚS·û
+& 
+´ÙeùiÚS·û
+, cÚ¡ 
+C»d’tŸl
+& 
+´İo£dC»d’tŸl
+, 
+´eviousFau»CouÁ
+, cÚ¡ 
+ResourûRe¥Ú£
+& 
+»¥Ú£
+, cÚ¡ 
+ResourûE¼Ü
+& 
+”rÜ
+)
+
+39 : 
+Auth’tiÿtiÚCh®ËngeBa£
+(
+´ÙeùiÚS·û
+, 
+´İo£dC»d’tŸl
+, 
+´eviousFau»CouÁ
+, 
+»¥Ú£
+, 
+”rÜ
+)
+
+	@DnsPrefetchHelper.cpp
+
+2 #ifdeà
+SSLAB__DEBUG
+
+
+3 #iâdeà
+SSLAB__QDATETIME
+
+
+4 
+	#SSLAB__QDATETIME
+
+
+	)
+
+5 
+	~<QD©eTime
+>
+
+9 #ifdeà
+SSLAB__DEBUG
+
+
+10 #iâdeà
+SSLAB__QTHREAD
+
+
+11 
+	#SSLAB__QTHREAD
+
+
+	)
+
+12 
+	~<QTh»ad
+>
+
+34 
+	~"cÚfig.h
+"
+
+35 
+	~"DnsP»ãtchH–³r.h
+"
+
+37 
+	~"PÏtfÜmSŒšg.h
+"
+
+39 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+41 
+´eãtchDNS
+(cÚ¡ 
+SŒšg
+& 
+ho¡Çme
+)
+
+43 #ifdeà
+SSLAB__DEBUG
+
+
+44 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+47 ià(
+	gQWebS‘tšgs
+::
+glob®S‘tšgs
+()->
+‹¡A‰ribu‹
+(
+QWebS‘tšgs
+::
+DnsP»ãtchEÇbËd
+)) {
+
+48 
+DnsP»ãtchH–³r
+ 
+dnsP»ãtchH–³r
+;
+
+49 
+	gdnsP»ãtchH–³r
+.
+lookup
+(
+QSŒšg
+(
+ho¡Çme
+));
+
+	@DnsPrefetchHelper.h
+
+19 #iâdeà
+DNSPREFETCHHELPER_H
+
+
+20 
+	#DNSPREFETCHHELPER_H
+
+
+	)
+
+22 
+	~<QObjeù
+>
+
+23 
+	~<QCache
+>
+
+24 
+	~<QHo¡Info
+>
+
+25 
+	~<QS‘
+>
+
+26 
+	~<QSŒšg
+>
+
+27 
+	~<QTime
+>
+
+28 
+	~"qweb£‰šgs.h
+"
+
+30 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+32 şas 
+	cDnsP»ãtchH–³r
+ : 
+public
+ 
+QObjeù
+ {
+
+33 
+Q_OBJECT
+
+
+34 
+public
+:
+
+35 
+DnsP»ãtchH–³r
+(è: 
+QObjeù
+(), 
+cu¼’tLookups
+(0) {};
+
+37 
+public
+ 
+	g¦Ùs
+:
+
+38 
+lookup
+(
+QSŒšg
+ 
+ho¡Çme
+)
+
+40 ià(
+ho¡Çme
+.
+isEm±y
+())
+
+42 ià(
+	gcu¼’tLookups
+ >= 10)
+
+45 #ià
+QT_VERSION
+ >ğ
+QT_VERSION_CHECK
+(4, 6, 3)
+
+46 
+	gcu¼’tLookups
+++;
+
+47 
+	gQHo¡Info
+::
+lookupHo¡
+(
+ho¡Çme
+, 
+this
+, 
+SLOT
+(
+lookedUp
+(
+QHo¡Info
+)));
+
+52 
+QTime
+* 
+	g’ŒyTime
+ = 
+lookupCache
+.
+objeù
+(
+ho¡Çme
+);
+
+53 ià(
+	g’ŒyTime
+ &&ƒÁryTime->
+–­£d
+() > 300*1000) {
+
+55 
+	glookupCache
+.
+»move
+(
+ho¡Çme
+);
+
+56 } ià(!
+	g’ŒyTime
+) {
+
+58 
+QTime
+ *
+	gtmpTime
+ = 
+Ãw
+ QTime();
+
+59 *
+	gtmpTime
+ = 
+QTime
+::
+cu¼’tTime
+();
+
+60 
+	glookupCache
+.
+š£¹
+(
+ho¡Çme
+, 
+tmpTime
+);
+
+61 
+	gcu¼’tLookups
+++;
+
+62 
+	gQHo¡Info
+::
+lookupHo¡
+(
+ho¡Çme
+, 
+this
+, 
+SLOT
+(
+lookedUp
+(
+QHo¡Info
+)));
+
+67 
+lookedUp
+(cÚ¡ 
+QHo¡Info
+&)
+
+73 
+	gcu¼’tLookups
+--;
+
+76 
+	g´Ùeùed
+:
+
+77 #ià
+QT_VERSION
+ < 
+QT_VERSION_CHECK
+(4, 6, 3)
+
+78 
+	gQCache
+<
+	gQSŒšg
+, 
+	gQTime
+> 
+	glookupCache
+;
+
+80 
+	gcu¼’tLookups
+;
+
+	@NetworkStateNotifierPrivate.h
+
+20 #iâdeà
+N‘wÜkS‹NÙif›rPriv©e_h
+
+
+21 
+	#N‘wÜkS‹NÙif›rPriv©e_h
+
+
+	)
+
+23 
+	~<QObjeù
+>
+
+25 #ià
+QT_VERSION
+ < 0x040700
+
+26 
+Çme¥aû
+ 
+	gQtMob™y
+ {
+
+27 
+şass
+ 
+	gQN‘wÜkCÚfigu¿tiÚMªag”
+;
+
+30 
+QT_BEGIN_NAMESPACE
+
+
+31 
+şass
+ 
+	gQN‘wÜkCÚfigu¿tiÚMªag”
+;
+
+32 
+	gQT_END_NAMESPACE
+
+
+35 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+37 
+şass
+ 
+	gN‘wÜkS‹NÙif›r
+;
+
+39 şas 
+	cN‘wÜkS‹NÙif›rPriv©e
+ : 
+public
+ 
+QObjeù
+ {
+
+40 
+Q_OBJECT
+
+
+41 
+public
+:
+
+42 
+N‘wÜkS‹NÙif›rPriv©e
+(
+N‘wÜkS‹NÙif›r
+* 
+nÙif›r
+);
+
+43 ~
+N‘wÜkS‹NÙif›rPriv©e
+();
+
+44 
+public
+ 
+	g¦Ùs
+:
+
+45 
+ÚlšeS‹Chªged
+(
+boŞ
+);
+
+46 
+ÃtwÜkAcûssP”missiÚChªged
+(
+boŞ
+);
+
+48 
+	gpublic
+:
+
+49 #ià
+QT_VERSION
+ < 0x040700
+
+50 
+QtMob™y
+::
+QN‘wÜkCÚfigu¿tiÚMªag”
+* 
+m_cÚfigu¿tiÚMªag”
+;
+
+52 
+QN‘wÜkCÚfigu¿tiÚMªag”
+* 
+	gm_cÚfigu¿tiÚMªag”
+;
+
+54 
+boŞ
+ 
+	gm_Úlše
+;
+
+55 
+boŞ
+ 
+	gm_ÃtwÜkAcûssAÎowed
+;
+
+56 
+N‘wÜkS‹NÙif›r
+* 
+	gm_nÙif›r
+;
+
+	@NetworkStateNotifierQt.cpp
+
+2 #ifdeà
+SSLAB__DEBUG
+
+
+3 #iâdeà
+SSLAB__QDATETIME
+
+
+4 
+	#SSLAB__QDATETIME
+
+
+	)
+
+5 
+	~<QD©eTime
+>
+
+9 #ifdeà
+SSLAB__DEBUG
+
+
+10 #iâdeà
+SSLAB__QTHREAD
+
+
+11 
+	#SSLAB__QTHREAD
+
+
+	)
+
+12 
+	~<QTh»ad
+>
+
+34 
+	~"cÚfig.h
+"
+
+35 
+	~"N‘wÜkS‹NÙif›r.h
+"
+
+37 #ià
+PLATFORM
+(
+QT
+è&& 
+ENABLE
+(
+QT_BEARER
+)
+
+39 
+	~"N‘wÜkS‹NÙif›rPriv©e.h
+"
+
+40 
+	~"qÃtwÜkcÚfigmªag”.h
+"
+
+42 #ià
+QT_VERSION
+ < 0x040700
+
+43 
+usšg
+ 
+Çme¥aû
+ 
+	gQtMob™y
+;
+
+46 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+48 
+	gN‘wÜkS‹NÙif›rPriv©e
+::
+N‘wÜkS‹NÙif›rPriv©e
+(
+N‘wÜkS‹NÙif›r
+* 
+nÙif›r
+)
+
+49 : 
+m_cÚfigu¿tiÚMªag”
+(
+Ãw
+ 
+QN‘wÜkCÚfigu¿tiÚMªag”
+())
+
+50 , 
+m_Úlše
+(
+m_cÚfigu¿tiÚMªag”
+->
+isOÆše
+())
+
+51 , 
+m_ÃtwÜkAcûssAÎowed
+(
+Œue
+)
+
+52 , 
+m_nÙif›r
+(
+nÙif›r
+)
+
+54 
+Q_ASSERT
+(
+nÙif›r
+);
+
+55 
+cÚÃù
+(
+m_cÚfigu¿tiÚMªag”
+, 
+SIGNAL
+(
+ÚlšeS‹Chªged
+(
+boŞ
+)), 
+this
+, 
+SLOT
+(onlineStateChanged(bool)));
+
+58 
+	gN‘wÜkS‹NÙif›rPriv©e
+::
+ÚlšeS‹Chªged
+(
+boŞ
+ 
+isOÆše
+)
+
+60 #ifdeà
+SSLAB__DEBUG
+
+
+61 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+64 ià(
+	gm_Úlše
+ =ğ
+isOÆše
+)
+
+67 
+	gm_Úlše
+ = 
+isOÆše
+;
+
+68 ià(
+	gm_ÃtwÜkAcûssAÎowed
+)
+
+69 
+	gm_nÙif›r
+->
+upd©eS‹
+();
+
+72 
+	gN‘wÜkS‹NÙif›rPriv©e
+::
+ÃtwÜkAcûssP”missiÚChªged
+(
+boŞ
+ 
+isAÎowed
+)
+
+74 #ifdeà
+SSLAB__DEBUG
+
+
+75 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+78 ià(
+	gisAÎowed
+ =ğ
+m_ÃtwÜkAcûssAÎowed
+)
+
+81 
+	gm_ÃtwÜkAcûssAÎowed
+ = 
+isAÎowed
+;
+
+82 ià(
+	gm_Úlše
+)
+
+83 
+	gm_nÙif›r
+->
+upd©eS‹
+();
+
+86 
+	gN‘wÜkS‹NÙif›rPriv©e
+::~
+N‘wÜkS‹NÙif›rPriv©e
+()
+
+88 #ifdeà
+SSLAB__DEBUG
+
+
+89 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+92 
+d–‘e
+ 
+	gm_cÚfigu¿tiÚMªag”
+;
+
+95 
+	gN‘wÜkS‹NÙif›r
+::
+upd©eS‹
+()
+
+97 #ifdeà
+SSLAB__DEBUG
+
+
+98 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+101 ià(
+	gm_isOnLše
+ =ğ(
+p
+->
+m_Úlše
+ &&…->
+m_ÃtwÜkAcûssAÎowed
+))
+
+104 
+	gm_isOnLše
+ = 
+p
+->
+m_Úlše
+ &&…->
+m_ÃtwÜkAcûssAÎowed
+;
+
+105 ià(
+	gm_ÃtwÜkS‹ChªgedFunùiÚ
+)
+
+106 
+m_ÃtwÜkS‹ChªgedFunùiÚ
+();
+
+109 
+	gN‘wÜkS‹NÙif›r
+::
+N‘wÜkS‹NÙif›r
+()
+
+110 : 
+m_isOnLše
+(
+Œue
+)
+
+111 , 
+m_ÃtwÜkS‹ChªgedFunùiÚ
+(0)
+
+113 #ifdeà
+SSLAB__DEBUG
+
+
+114 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+117 
+	gp
+ = 
+Ãw
+ 
+N‘wÜkS‹NÙif›rPriv©e
+(
+this
+);
+
+118 
+	gm_isOnLše
+ = 
+p
+->
+m_Úlše
+ &&…->
+m_ÃtwÜkAcûssAÎowed
+;
+
+121 
+	gN‘wÜkS‹NÙif›r
+::
+£tN‘wÜkAcûssAÎowed
+(
+boŞ
+ 
+isAÎowed
+)
+
+123 #ifdeà
+SSLAB__DEBUG
+
+
+124 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+127 
+	gp
+->
+ÃtwÜkAcûssP”missiÚChªged
+(
+isAÎowed
+);
+
+134 
+	~"moc_N‘wÜkS‹NÙif›rPriv©e.ıp
+"
+
+	@QNetworkReplyHandler.cpp
+
+2 #ifdeà
+SSLAB__DEBUG
+
+
+3 #iâdeà
+SSLAB__QDATETIME
+
+
+4 
+	#SSLAB__QDATETIME
+
+
+	)
+
+5 
+	~<QD©eTime
+>
+
+9 #ifdeà
+SSLAB__DEBUG
+
+
+10 #iâdeà
+SSLAB__QTHREAD
+
+
+11 
+	#SSLAB__QTHREAD
+
+
+	)
+
+12 
+	~<QTh»ad
+>
+
+35 
+	~"cÚfig.h
+"
+
+36 
+	~"QN‘wÜkR•lyHªdËr.h
+"
+
+38 
+	~"CSŒšg.h
+"
+
+39 
+	~"HTTPP¬£rs.h
+"
+
+40 
+	~"MIMETy³Regi¡ry.h
+"
+
+41 
+	~"ResourûHªdË.h
+"
+
+42 
+	~"ResourûHªdËCl›Á.h
+"
+
+43 
+	~"ResourûHªdËIÁ”Çl.h
+"
+
+44 
+	~"ResourûRe¥Ú£.h
+"
+
+45 
+	~"ResourûReque¡.h
+"
+
+46 
+	~<QD©eTime
+>
+
+47 
+	~<QFe
+>
+
+48 
+	~<QN‘wÜkR•ly
+>
+
+49 
+	~<QN‘wÜkCook›
+>
+
+50 
+	~<qwebäame.h
+>
+
+51 
+	~<qweb·ge.h
+>
+
+53 
+	~<QDebug
+>
+
+54 
+	~<QCÜeAµliÿtiÚ
+>
+
+60 #ià
+QT_VERSION
+ > 
+QT_VERSION_CHECK
+(4, 6, 2)
+
+61 
+	#SIGNAL_CONN
+ 
+Qt
+::
+DœeùCÚÃùiÚ
+
+
+	)
+
+63 
+	#SIGNAL_CONN
+ 
+Qt
+::
+QueuedCÚÃùiÚ
+
+
+	)
+
+66 cÚ¡ 
+	ggMaxRecursiÚLim™
+ = 10;
+
+68 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+71 
+	gFÜmD©aIODeviû
+::
+FÜmD©aIODeviû
+(
+FÜmD©a
+* 
+d©a
+)
+
+72 : 
+m_fÜmEËm’ts
+(
+d©a
+ ? d©a->
+–em’ts
+(è: 
+VeùÜ
+<
+FÜmD©aEËm’t
+>())
+
+73 , 
+m_cu¼’tFe
+(0)
+
+74 , 
+m_cu¼’tD–
+(0)
+
+76 
+£tO³nMode
+(
+FÜmD©aIODeviû
+::
+R—dOÆy
+);
+
+78 ià(!
+	gm_fÜmEËm’ts
+.
+isEm±y
+(è&& m_fÜmEËm’ts[0].
+	gm_ty³
+ =ğ
+FÜmD©aEËm’t
+::
+’codedFe
+)
+
+79 
+İ’FeFÜCu¼’tEËm’t
+();
+
+82 
+	gFÜmD©aIODeviû
+::~
+FÜmD©aIODeviû
+()
+
+84 #ifdeà
+SSLAB__DEBUG
+
+
+85 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+88 
+d–‘e
+ 
+	gm_cu¼’tFe
+;
+
+91 
+	gFÜmD©aIODeviû
+::
+moveToNextEËm’t
+()
+
+93 #ifdeà
+SSLAB__DEBUG
+
+
+94 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+97 ià(
+	gm_cu¼’tFe
+)
+
+98 
+	gm_cu¼’tFe
+->
+şo£
+();
+
+99 
+	gm_cu¼’tD–
+ = 0;
+
+101 
+	gm_fÜmEËm’ts
+.
+»move
+(0);
+
+103 ià(
+	gm_fÜmEËm’ts
+.
+isEm±y
+(è|| m_fÜmEËm’ts[0].
+	gm_ty³
+ =ğ
+FÜmD©aEËm’t
+::
+d©a
+)
+
+106 
+İ’FeFÜCu¼’tEËm’t
+();
+
+109 
+	gFÜmD©aIODeviû
+::
+İ’FeFÜCu¼’tEËm’t
+()
+
+111 #ifdeà
+SSLAB__DEBUG
+
+
+112 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+115 ià(!
+	gm_cu¼’tFe
+)
+
+116 
+	gm_cu¼’tFe
+ = 
+Ãw
+ 
+QFe
+;
+
+118 
+	gm_cu¼’tFe
+->
+£tFeName
+(
+m_fÜmEËm’ts
+[0].
+m_f’ame
+);
+
+119 
+	gm_cu¼’tFe
+->
+İ’
+(
+QFe
+::
+R—dOÆy
+);
+
+124 
+qšt64
+ 
+	gFÜmD©aIODeviû
+::
+»adD©a
+(* 
+de¡š©iÚ
+, qšt64 
+size
+)
+
+126 #ifdeà
+SSLAB__DEBUG
+
+
+127 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+130 ià(
+	gm_fÜmEËm’ts
+.
+isEm±y
+())
+
+133 
+qšt64
+ 
+	gcİ›d
+ = 0;
+
+134 
+	gcİ›d
+ < 
+	gsize
+ && !
+	gm_fÜmEËm’ts
+.
+isEm±y
+()) {
+
+135 cÚ¡ 
+	gFÜmD©aEËm’t
+& 
+	g–em’t
+ = 
+m_fÜmEËm’ts
+[0];
+
+136 cÚ¡ 
+qšt64
+ 
+	gavaabË
+ = 
+size
+-
+cİ›d
+;
+
+138 ià(
+	g–em’t
+.
+	gm_ty³
+ =ğ
+FÜmD©aEËm’t
+::
+d©a
+) {
+
+139 cÚ¡ 
+qšt64
+ 
+toCİy
+ = 
+qMš
+<qšt64>(
+avaabË
+, 
+	g–em’t
+.
+	gm_d©a
+.
+size
+(è- 
+	gm_cu¼’tD–
+);
+
+140 
+memıy
+(
+de¡š©iÚ
++
+cİ›d
+, 
+–em’t
+.
+m_d©a
+.
+d©a
+()+
+m_cu¼’tD–
+, 
+toCİy
+);
+
+141 
+	gm_cu¼’tD–
+ +ğ
+toCİy
+;
+
+142 
+	gcİ›d
+ +ğ
+toCİy
+;
+
+144 ià(
+	gm_cu¼’tD–
+ =ğ
+–em’t
+.
+m_d©a
+.
+size
+())
+
+145 
+moveToNextEËm’t
+();
+
+147 cÚ¡ 
+QBy‹A¼ay
+ 
+	gd©a
+ = 
+m_cu¼’tFe
+->
+»ad
+(
+avaabË
+);
+
+148 
+memıy
+(
+de¡š©iÚ
++
+cİ›d
+, 
+d©a
+.
+cÚ¡D©a
+(), d©a.
+size
+());
+
+149 
+	gcİ›d
+ +ğ
+d©a
+.
+size
+();
+
+151 ià(
+	gm_cu¼’tFe
+->
+©End
+(è|| !m_cu¼’tFe->
+isO³n
+())
+
+152 
+moveToNextEËm’t
+();
+
+156  
+	gcİ›d
+;
+
+159 
+qšt64
+ 
+	gFÜmD©aIODeviû
+::
+wr™eD©a
+(const *, qint64)
+
+161 #ifdeà
+SSLAB__DEBUG
+
+
+162 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+168 
+boŞ
+ 
+	gFÜmD©aIODeviû
+::
+isSequ’tŸl
+() const
+
+170 #ifdeà
+SSLAB__DEBUG
+
+
+171 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+174  
+	gŒue
+;
+
+177 
+	gQN‘wÜkR•lyHªdËr
+::
+QN‘wÜkR•lyHªdËr
+(
+ResourûHªdË
+* 
+hªdË
+, 
+LßdMode
+ 
+lßdMode
+)
+
+178 : 
+QObjeù
+(0)
+
+179 , 
+m_»¶y
+(0)
+
+180 , 
+m_»sourûHªdË
+(
+hªdË
+)
+
+181 , 
+m_»dœeùed
+(
+çl£
+)
+
+182 , 
+m_»¥Ú£S’t
+(
+çl£
+)
+
+183 , 
+m_»¥Ú£D©aS’t
+(
+çl£
+)
+
+184 , 
+m_lßdMode
+(
+lßdMode
+)
+
+185 , 
+m_shouldS¹
+(
+Œue
+)
+
+186 , 
+m_shouldFšish
+(
+çl£
+)
+
+187 , 
+m_shouldS’dRe¥Ú£
+(
+çl£
+)
+
+188 , 
+m_shouldFÜw¬dD©a
+(
+çl£
+)
+
+189 , 
+m_»dœeùiÚTr›s
+(
+gMaxRecursiÚLim™
+)
+
+191 #ifdeà
+SSLAB__DEBUG
+
+
+192 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+195 cÚ¡ 
+	gResourûReque¡
+ &
+	gr
+ = 
+m_»sourûHªdË
+->
+»que¡
+();
+
+197 ià(
+	gr
+.
+h‰pM‘hod
+() == "GET")
+
+198 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+G‘O³¿tiÚ
+;
+
+199 ià(
+	gr
+.
+h‰pM‘hod
+() == "HEAD")
+
+200 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+H—dO³¿tiÚ
+;
+
+201 ià(
+	gr
+.
+h‰pM‘hod
+() == "POST")
+
+202 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+Po¡O³¿tiÚ
+;
+
+203 ià(
+	gr
+.
+h‰pM‘hod
+() == "PUT")
+
+204 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+PutO³¿tiÚ
+;
+
+205 #ià
+QT_VERSION
+ >= 0x040600
+
+206 ià(
+	gr
+.
+h‰pM‘hod
+() == "DELETE")
+
+207 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+D–‘eO³¿tiÚ
+;
+
+209 #ià
+QT_VERSION
+ >= 0x040700
+
+210 ià(
+	gr
+.
+h‰pM‘hod
+() == "OPTIONS")
+
+211 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+Cu¡omO³¿tiÚ
+;
+
+214 
+	gm_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+UnknownO³¿tiÚ
+;
+
+216 
+	gm_»que¡
+ = 
+r
+.
+toN‘wÜkReque¡
+(
+m_»sourûHªdË
+->
+g‘IÁ”Çl
+()->
+m_äame
+);
+
+217 
+	gm_»que¡
+.
+£tOrigš®U¾
+(
+r
+.
+u¾
+().
+¡ršg
+().
+utf8
+().
+d©a
+());
+
+218 
+qW¬nšg
+("[SR-Hªd] oriU¾=%s", 
+m_»que¡
+.
+Üigš®U¾
+());
+
+220 ià(
+	gm_lßdMode
+ =ğ
+LßdNÜm®
+)
+
+221 
+¡¬t
+();
+
+224 
+	gQN‘wÜkR•lyHªdËr
+::
+£tLßdMode
+(
+LßdMode
+ 
+mode
+)
+
+226 #ifdeà
+SSLAB__DEBUG
+
+
+227 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+233 
+	gmode
+) {
+
+234 
+	gLßdNÜm®
+:
+
+235 
+m_lßdMode
+ = 
+LßdResumšg
+;
+
+236 
+em™
+ 
+´oûssQueuedI‹ms
+();
+
+238 
+	gLßdDeã¼ed
+:
+
+239 
+m_lßdMode
+ = 
+LßdDeã¼ed
+;
+
+241 
+	gLßdResumšg
+:
+
+242 
+Q_ASSERT
+(0);
+
+247 
+	gQN‘wÜkR•lyHªdËr
+::
+abÜt
+()
+
+249 #ifdeà
+SSLAB__DEBUG
+
+
+250 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+253 
+	gm_»sourûHªdË
+ = 0;
+
+254 ià(
+	gm_»¶y
+) {
+
+255 
+QN‘wÜkR•ly
+* 
+	g»¶y
+ = 
+»Ëa£
+();
+
+256 
+	g»¶y
+->
+abÜt
+();
+
+257 
+	g»¶y
+->
+d–‘eL©”
+();
+
+259 
+d–‘eL©”
+();
+
+262 
+QN‘wÜkR•ly
+* 
+	gQN‘wÜkR•lyHªdËr
+::
+»Ëa£
+()
+
+264 #ifdeà
+SSLAB__DEBUG
+
+
+265 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+268 
+QN‘wÜkR•ly
+* 
+	g»¶y
+ = 
+m_»¶y
+;
+
+269 ià(
+	gm_»¶y
+) {
+
+270 
+discÚÃù
+(
+m_»¶y
+, 0, 
+this
+, 0);
+
+274 
+	gQCÜeAµliÿtiÚ
+::
+»movePo¡edEv’ts
+(
+this
+, 
+QEv’t
+::
+M‘aC®l
+);
+
+275 
+	gm_»¶y
+->
+£tP¬’t
+(0);
+
+276 
+	gm_»¶y
+ = 0;
+
+278  
+	g»¶y
+;
+
+281 
+boŞ
+ 
+ignÜeH‰pE¼Ü
+(
+QN‘wÜkR•ly
+* 
+»¶y
+, boŞ 
+»ûivedD©a
+)
+
+283 #ifdeà
+SSLAB__DEBUG
+
+
+284 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+287 
+	gh‰pStusCode
+ = 
+»¶y
+->
+©Œibu‹
+(
+QN‘wÜkReque¡
+::
+H‰pStusCodeA‰ribu‹
+).
+toIÁ
+();
+
+289 ià(
+	gh‰pStusCode
+ =ğ401 || 
+h‰pStusCode
+ == 407)
+
+290  
+Œue
+;
+
+292 ià(
+	g»ûivedD©a
+ && (
+	gh‰pStusCode
+ >ğ400 && 
+h‰pStusCode
+ < 600))
+
+293  
+Œue
+;
+
+295  
+	gçl£
+;
+
+298 
+	gQN‘wÜkR•lyHªdËr
+::
+fšish
+()
+
+300 #ifdeà
+SSLAB__DEBUG
+
+
+301 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+304 
+	gm_shouldFšish
+ = (
+m_lßdMode
+ !ğ
+LßdNÜm®
+);
+
+305 ià(
+	gm_shouldFšish
+)
+
+308 
+£ndRe¥Ú£IfN“ded
+();
+
+310 ià(!
+	gm_»sourûHªdË
+)
+
+312 
+ResourûHªdËCl›Á
+* 
+	gş›Á
+ = 
+m_»sourûHªdË
+->
+ş›Á
+();
+
+313 ià(!
+	gş›Á
+) {
+
+314 
+	gm_»¶y
+->
+d–‘eL©”
+();
+
+315 
+	gm_»¶y
+ = 0;
+
+319 
+QN‘wÜkR•ly
+* 
+	gŞdR•ly
+ = 
+m_»¶y
+;
+
+321 ià(
+	gm_»dœeùed
+) {
+
+322 
+»£tS‹
+();
+
+323 
+¡¬t
+();
+
+324 } ià(!
+	gm_»¶y
+->
+”rÜ
+(è|| 
+ignÜeH‰pE¼Ü
+(
+m_»¶y
+, 
+m_»¥Ú£D©aS’t
+)) {
+
+325 
+	gş›Á
+->
+didFšishLßdšg
+(
+m_»sourûHªdË
+);
+
+327 
+QU¾
+ 
+	gu¾
+ = 
+m_»¶y
+->
+u¾
+();
+
+328 
+	gh‰pStusCode
+ = 
+m_»¶y
+->
+©Œibu‹
+(
+QN‘wÜkReque¡
+::
+H‰pStusCodeA‰ribu‹
+).
+toIÁ
+();
+
+330 ià(
+	gh‰pStusCode
+) {
+
+331 
+ResourûE¼Ü
+ 
+”rÜ
+("HTTP", 
+h‰pStusCode
+, 
+u¾
+.
+toSŒšg
+(), 
+m_»¶y
+->
+©Œibu‹
+(
+QN‘wÜkReque¡
+::
+H‰pR—sÚPh¿£A‰ribu‹
+).toString());
+
+332 
+	gş›Á
+->
+didFa
+(
+m_»sourûHªdË
+, 
+”rÜ
+);
+
+334 
+ResourûE¼Ü
+ 
+”rÜ
+("QtN‘wÜk", 
+m_»¶y
+->”rÜ(), 
+u¾
+.
+toSŒšg
+(), m_»¶y->
+”rÜSŒšg
+());
+
+335 
+	gş›Á
+->
+didFa
+(
+m_»sourûHªdË
+, 
+”rÜ
+);
+
+339 
+	gŞdR•ly
+->
+d–‘eL©”
+();
+
+340 ià(
+	gŞdR•ly
+ =ğ
+m_»¶y
+)
+
+341 
+m_»¶y
+ = 0;
+
+344 
+	gQN‘wÜkR•lyHªdËr
+::
+£ndRe¥Ú£IfN“ded
+()
+
+346 #ifdeà
+SSLAB__DEBUG
+
+
+347 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+350 
+	gm_shouldS’dRe¥Ú£
+ = (
+m_lßdMode
+ !ğ
+LßdNÜm®
+);
+
+351 ià(
+	gm_shouldS’dRe¥Ú£
+)
+
+354 ià(
+	gm_»¶y
+->
+”rÜ
+(è&& !
+ignÜeH‰pE¼Ü
+(
+m_»¶y
+, 
+m_»¥Ú£D©aS’t
+))
+
+357 ià(
+	gm_»¥Ú£S’t
+ || !
+	gm_»sourûHªdË
+)
+
+359 
+	gm_»¥Ú£S’t
+ = 
+Œue
+;
+
+361 
+ResourûHªdËCl›Á
+* 
+	gş›Á
+ = 
+m_»sourûHªdË
+->
+ş›Á
+();
+
+362 ià(!
+	gş›Á
+)
+
+365 
+	gWebCÜe
+::
+SŒšg
+ 
+cÚ‹ÁTy³
+ = 
+m_»¶y
+->
+h—d”
+(
+QN‘wÜkReque¡
+::
+CÚ‹ÁTy³H—d”
+).
+toSŒšg
+();
+
+366 
+	gWebCÜe
+::
+SŒšg
+ 
+’codšg
+ = 
+exŒaùCh¬£tFromMedŸTy³
+(
+cÚ‹ÁTy³
+);
+
+367 
+	gWebCÜe
+::
+SŒšg
+ 
+mimeTy³
+ = 
+exŒaùMIMETy³FromMedŸTy³
+(
+cÚ‹ÁTy³
+);
+
+369 ià(
+	gmimeTy³
+.
+isEm±y
+()) {
+
+371 
+QSŒšg
+ 
+	gex‹nsiÚ
+ = 
+m_»¶y
+->
+u¾
+().
+·th
+();
+
+372 
+	gšdex
+ = 
+ex‹nsiÚ
+.
+Ï¡IndexOf
+(
+QL©š1Ch¬
+('.'));
+
+373 ià(
+	gšdex
+ > 0) {
+
+374 
+	gex‹nsiÚ
+ = 
+ex‹nsiÚ
+.
+mid
+(
+šdex
+ + 1);
+
+375 
+	gmimeTy³
+ = 
+MIMETy³Regi¡ry
+::
+g‘MIMETy³FÜEx‹nsiÚ
+(
+ex‹nsiÚ
+);
+
+379 
+KURL
+ 
+u¾
+(
+m_»¶y
+->url());
+
+380 
+ResourûRe¥Ú£
+ 
+»¥Ú£
+(
+u¾
+, 
+mimeTy³
+,
+
+381 
+m_»¶y
+->
+h—d”
+(
+QN‘wÜkReque¡
+::
+CÚ‹ÁL’gthH—d”
+).
+toLÚgLÚg
+(),
+
+382 
+’codšg
+, 
+SŒšg
+());
+
+384 ià(
+	gu¾
+.
+isLoÿlFe
+()) {
+
+385 
+	gş›Á
+->
+didReûiveRe¥Ú£
+(
+m_»sourûHªdË
+, 
+»¥Ú£
+);
+
+390 
+	g¡©usCode
+ = 
+m_»¶y
+->
+©Œibu‹
+(
+QN‘wÜkReque¡
+::
+H‰pStusCodeA‰ribu‹
+).
+toIÁ
+();
+
+392 ià(
+	gu¾
+.
+´ÙocŞInHTTPFamy
+()) {
+
+393 
+SŒšg
+ 
+	gsugge¡edF’ame
+ = 
+f’ameFromHTTPCÚ‹ÁDi¥os™iÚ
+(
+QSŒšg
+::
+äomAscii
+(
+m_»¶y
+->
+¿wH—d”
+("Content-Disposition")));
+
+395 ià(!
+	gsugge¡edF’ame
+.
+isEm±y
+())
+
+396 
+	g»¥Ú£
+.
+£tSugge¡edF’ame
+(
+sugge¡edF’ame
+);
+
+398 
+	g»¥Ú£
+.
+£tSugge¡edF’ame
+(
+u¾
+.
+Ï¡P©hCompÚ’t
+());
+
+400 
+	g»¥Ú£
+.
+£tHTTPStusCode
+(
+¡©usCode
+);
+
+401 
+	g»¥Ú£
+.
+£tHTTPStusText
+(
+m_»¶y
+->
+©Œibu‹
+(
+QN‘wÜkReque¡
+::
+H‰pR—sÚPh¿£A‰ribu‹
+).
+toBy‹A¼ay
+().
+cÚ¡D©a
+());
+
+404 #ià
+QT_VERSION
+ >ğ
+QT_VERSION_CHECK
+(4, 7, 0)
+
+405 
+fÜ—ch
+ (cÚ¡ 
+QN‘wÜkR•ly
+::
+RawH—d”Paœ
+& 
+·œ
+, 
+m_»¶y
+->
+¿wH—d”Paœs
+()) {
+
+406 
+	g»¥Ú£
+.
+£tHTTPH—d”F›ld
+(
+QSŒšg
+::
+äomAscii
+(
+·œ
+.
+fœ¡
+), QSŒšg::äomAsciiÕaœ.
+£cÚd
+));
+
+409 
+fÜ—ch
+ (cÚ¡ 
+QBy‹A¼ay
+& 
+h—d”Name
+, 
+m_»¶y
+->
+¿wH—d”Li¡
+()) {
+
+410 
+	g»¥Ú£
+.
+£tHTTPH—d”F›ld
+(
+QSŒšg
+::
+äomAscii
+(
+h—d”Name
+), QSŒšg::äomAscii(
+m_»¶y
+->
+¿wH—d”
+(headerName)));
+
+415 
+QU¾
+ 
+	g»dœeùiÚ
+ = 
+m_»¶y
+->
+©Œibu‹
+(
+QN‘wÜkReque¡
+::
+RedœeùiÚT¬g‘A‰ribu‹
+).
+toU¾
+();
+
+416 ià(
+	g»dœeùiÚ
+.
+isV®id
+()) {
+
+417 
+QU¾
+ 
+	gÃwU¾
+ = 
+m_»¶y
+->
+u¾
+().
+»sŞved
+(
+»dœeùiÚ
+);
+
+419 
+	gm_»dœeùiÚTr›s
+--;
+
+420 ià(
+	gm_»dœeùiÚTr›s
+ == 0) {
+
+421 
+ResourûE¼Ü
+ 
+”rÜ
+(
+ÃwU¾
+.
+ho¡
+(), 400 ,
+
+422 
+ÃwU¾
+.
+toSŒšg
+(),
+
+423 
+QCÜeAµliÿtiÚ
+::
+Œª¦©e
+("QWebPage", "Redirection†imit„eached"));
+
+424 
+	gş›Á
+->
+didFa
+(
+m_»sourûHªdË
+, 
+”rÜ
+);
+
+427 
+	gm_»dœeùed
+ = 
+Œue
+;
+
+429 
+ResourûReque¡
+ 
+	gÃwReque¡
+ = 
+m_»sourûHªdË
+->
+»que¡
+();
+
+430 
+	gÃwReque¡
+.
+£tURL
+(
+ÃwU¾
+);
+
+432 ià(((
+	g¡©usCode
+ >ğ301 && 
+¡©usCode
+ <ğ303è|| stusCod=ğ307è&& 
+m_m‘hod
+ =ğ
+QN‘wÜkAcûssMªag”
+::
+Po¡O³¿tiÚ
+) {
+
+433 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+G‘O³¿tiÚ
+;
+
+434 
+	gÃwReque¡
+.
+£tHTTPM‘hod
+("GET");
+
+438 ià(!
+	gÃwReque¡
+.
+u¾
+().
+´ÙocŞIs
+("h‰ps"è&&…rÙocŞIs(
+ÃwReque¡
+.
+h‰pReã¼”
+(), "https"))
+
+439 
+	gÃwReque¡
+.
+ş—rHTTPReã¼”
+();
+
+441 
+	gş›Á
+->
+wlS’dReque¡
+(
+m_»sourûHªdË
+, 
+ÃwReque¡
+, 
+»¥Ú£
+);
+
+442 ià(!
+	gm_»sourûHªdË
+)
+
+445 
+	gm_»que¡
+ = 
+ÃwReque¡
+.
+toN‘wÜkReque¡
+(
+m_»sourûHªdË
+->
+g‘IÁ”Çl
+()->
+m_äame
+);
+
+449 
+	gş›Á
+->
+didReûiveRe¥Ú£
+(
+m_»sourûHªdË
+, 
+»¥Ú£
+);
+
+452 
+	gQN‘wÜkR•lyHªdËr
+::
+fÜw¬dD©a
+()
+
+454 #ifdeà
+SSLAB__DEBUG
+
+
+455 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+458 
+	gm_shouldFÜw¬dD©a
+ = (
+m_lßdMode
+ !ğ
+LßdNÜm®
+);
+
+459 ià(
+	gm_shouldFÜw¬dD©a
+)
+
+462 
+£ndRe¥Ú£IfN“ded
+();
+
+465 ià(
+	gm_»dœeùed
+)
+
+468 ià(!
+	gm_»sourûHªdË
+)
+
+471 
+QBy‹A¼ay
+ 
+	gd©a
+ = 
+m_»¶y
+->
+»ad
+(m_»¶y->
+by‹sAvaabË
+());
+
+473 
+ResourûHªdËCl›Á
+* 
+	gş›Á
+ = 
+m_»sourûHªdË
+->
+ş›Á
+();
+
+474 ià(!
+	gş›Á
+)
+
+477 ià(!
+	gd©a
+.
+isEm±y
+()) {
+
+478 
+	gm_»¥Ú£D©aS’t
+ = 
+Œue
+;
+
+479 
+	gş›Á
+->
+didReûiveD©a
+(
+m_»sourûHªdË
+, 
+d©a
+.
+cÚ¡D©a
+(), d©a.
+Ëngth
+(), data.length() );
+
+483 
+	gQN‘wÜkR•lyHªdËr
+::
+u¶ßdProg»ss
+(
+qšt64
+ 
+by‹sS’t
+, qšt64 
+by‹sTÙ®
+)
+
+485 #ifdeà
+SSLAB__DEBUG
+
+
+486 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+489 ià(!
+	gm_»sourûHªdË
+)
+
+492 
+ResourûHªdËCl›Á
+* 
+	gş›Á
+ = 
+m_»sourûHªdË
+->
+ş›Á
+();
+
+493 ià(!
+	gş›Á
+)
+
+496 
+	gş›Á
+->
+didS’dD©a
+(
+m_»sourûHªdË
+, 
+by‹sS’t
+, 
+by‹sTÙ®
+);
+
+499 
+	gQN‘wÜkR•lyHªdËr
+::
+¡¬t
+()
+
+501 #ifdeà
+SSLAB__DEBUG
+
+
+502 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+505 
+	gm_shouldS¹
+ = 
+çl£
+;
+
+507 
+ResourûHªdËIÁ”Çl
+* 
+	gd
+ = 
+m_»sourûHªdË
+->
+g‘IÁ”Çl
+();
+
+509 
+QN‘wÜkAcûssMªag”
+* 
+	gmªag”
+ = 
+d
+->
+m_äame
+->
+·ge
+()->
+ÃtwÜkAcûssMªag”
+();
+
+511 cÚ¡ 
+QU¾
+ 
+	gu¾
+ = 
+m_»que¡
+.
+u¾
+();
+
+512 cÚ¡ 
+QSŒšg
+ 
+	gscheme
+ = 
+u¾
+.
+scheme
+();
+
+516 ià(
+	gm_m‘hod
+ =ğ
+QN‘wÜkAcûssMªag”
+::
+Po¡O³¿tiÚ
+
+
+517 && (!
+u¾
+.
+toLoÿlFe
+().
+isEm±y
+(è|| u¾.
+scheme
+(è=ğ
+QL©š1SŒšg
+("data")))
+
+518 
+m_m‘hod
+ = 
+QN‘wÜkAcûssMªag”
+::
+G‘O³¿tiÚ
+;
+
+520 
+	gm_m‘hod
+) {
+
+521 
+	gQN‘wÜkAcûssMªag”
+::
+G‘O³¿tiÚ
+:
+
+522 
+m_»¶y
+ = 
+mªag”
+->
+g‘
+(
+m_»que¡
+);
+
+524 
+	gQN‘wÜkAcûssMªag”
+::
+Po¡O³¿tiÚ
+: {
+
+525 
+FÜmD©aIODeviû
+* 
+po¡Deviû
+ = 
+Ãw
+ FÜmD©aIODeviû(
+d
+->
+m_»que¡
+.
+h‰pBody
+());
+
+526 
+	gm_»¶y
+ = 
+mªag”
+->
+po¡
+(
+m_»que¡
+, 
+po¡Deviû
+);
+
+527 
+	gpo¡Deviû
+->
+£tP¬’t
+(
+m_»¶y
+);
+
+530 
+	gQN‘wÜkAcûssMªag”
+::
+H—dO³¿tiÚ
+:
+
+531 
+m_»¶y
+ = 
+mªag”
+->
+h—d
+(
+m_»que¡
+);
+
+533 
+	gQN‘wÜkAcûssMªag”
+::
+PutO³¿tiÚ
+: {
+
+534 
+FÜmD©aIODeviû
+* 
+putDeviû
+ = 
+Ãw
+ FÜmD©aIODeviû(
+d
+->
+m_»que¡
+.
+h‰pBody
+());
+
+535 
+	gm_»¶y
+ = 
+mªag”
+->
+put
+(
+m_»que¡
+, 
+putDeviû
+);
+
+536 
+	gputDeviû
+->
+£tP¬’t
+(
+m_»¶y
+);
+
+539 #ià
+QT_VERSION
+ >= 0x040600
+
+540 
+	gQN‘wÜkAcûssMªag”
+::
+D–‘eO³¿tiÚ
+: {
+
+541 
+m_»¶y
+ = 
+mªag”
+->
+d–‘eResourû
+(
+m_»que¡
+);
+
+545 #ià
+QT_VERSION
+ >= 0x040700
+
+546 
+	gQN‘wÜkAcûssMªag”
+::
+Cu¡omO³¿tiÚ
+:
+
+547 
+m_»¶y
+ = 
+mªag”
+->
+£ndCu¡omReque¡
+(
+m_»que¡
+, 
+m_»sourûHªdË
+->
+»que¡
+().
+h‰pM‘hod
+().
+Ïtš1
+().
+d©a
+());
+
+550 
+	gQN‘wÜkAcûssMªag”
+::
+UnknownO³¿tiÚ
+: {
+
+551 
+m_»¶y
+ = 0;
+
+552 
+ResourûHªdËCl›Á
+* 
+	gş›Á
+ = 
+m_»sourûHªdË
+->
+ş›Á
+();
+
+553 ià(
+	gş›Á
+) {
+
+554 
+ResourûE¼Ü
+ 
+”rÜ
+(
+u¾
+.
+ho¡
+(), 400 ,
+
+555 
+u¾
+.
+toSŒšg
+(),
+
+556 
+QCÜeAµliÿtiÚ
+::
+Œª¦©e
+("QWebPage", "Bad HTTP„equest"));
+
+557 
+	gş›Á
+->
+didFa
+(
+m_»sourûHªdË
+, 
+”rÜ
+);
+
+563 
+	gm_»¶y
+->
+£tP¬’t
+(
+this
+);
+
+565 
+cÚÃù
+(
+m_»¶y
+, 
+SIGNAL
+(
+fšished
+()),
+
+566 
+this
+, 
+SLOT
+(
+fšish
+()), 
+SIGNAL_CONN
+);
+
+570 ià(
+	gscheme
+ =ğ
+QL©š1SŒšg
+("h‰p"è|| 
+scheme
+ == QLatin1String("https"))
+
+571 
+cÚÃù
+(
+m_»¶y
+, 
+SIGNAL
+(
+m‘aD©aChªged
+()),
+
+572 
+this
+, 
+SLOT
+(
+£ndRe¥Ú£IfN“ded
+()), 
+SIGNAL_CONN
+);
+
+574 
+cÚÃù
+(
+m_»¶y
+, 
+SIGNAL
+(
+»adyR—d
+()),
+
+575 
+this
+, 
+SLOT
+(
+fÜw¬dD©a
+()), 
+SIGNAL_CONN
+);
+
+577 ià(
+	gm_»sourûHªdË
+->
+»que¡
+().
+»pÜtU¶ßdProg»ss
+()) {
+
+578 
+cÚÃù
+(
+m_»¶y
+, 
+SIGNAL
+(
+u¶ßdProg»ss
+(
+qšt64
+, qint64)),
+
+579 
+this
+, 
+SLOT
+(
+u¶ßdProg»ss
+(
+qšt64
+, qšt64)), 
+SIGNAL_CONN
+);
+
+583 
+cÚÃù
+(
+this
+, 
+SIGNAL
+(
+´oûssQueuedI‹ms
+()),
+
+584 
+this
+, 
+SLOT
+(
+£ndQueuedI‹ms
+()), 
+SIGNAL_CONN
+);
+
+587 
+	gQN‘wÜkR•lyHªdËr
+::
+»£tS‹
+()
+
+589 #ifdeà
+SSLAB__DEBUG
+
+
+590 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+593 
+	gm_»dœeùed
+ = 
+çl£
+;
+
+594 
+	gm_»¥Ú£S’t
+ = 
+çl£
+;
+
+595 
+	gm_»¥Ú£D©aS’t
+ = 
+çl£
+;
+
+596 
+	gm_shouldS¹
+ = 
+Œue
+;
+
+597 
+	gm_shouldFšish
+ = 
+çl£
+;
+
+598 
+	gm_shouldS’dRe¥Ú£
+ = 
+çl£
+;
+
+599 
+	gm_shouldFÜw¬dD©a
+ = 
+çl£
+;
+
+602 
+	gQN‘wÜkR•lyHªdËr
+::
+£ndQueuedI‹ms
+()
+
+604 #ifdeà
+SSLAB__DEBUG
+
+
+605 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+608 ià(
+	gm_lßdMode
+ !ğ
+LßdResumšg
+)
+
+610 
+	gm_lßdMode
+ = 
+LßdNÜm®
+;
+
+612 ià(
+	gm_shouldS¹
+)
+
+613 
+¡¬t
+();
+
+615 ià(
+	gm_shouldS’dRe¥Ú£
+)
+
+616 
+£ndRe¥Ú£IfN“ded
+();
+
+618 ià(
+	gm_shouldFÜw¬dD©a
+)
+
+619 
+fÜw¬dD©a
+();
+
+621 ià(
+	gm_shouldFšish
+)
+
+622 
+fšish
+();
+
+627 
+	~"moc_QN‘wÜkR•lyHªdËr.ıp
+"
+
+	@QNetworkReplyHandler.h
+
+19 #iâdeà
+QNETWORKREPLYHANDLER_H
+
+
+20 
+	#QNETWORKREPLYHANDLER_H
+
+
+	)
+
+22 
+	~<QObjeù
+>
+
+24 
+	~<QN‘wÜkReque¡
+>
+
+25 
+	~<QN‘wÜkAcûssMªag”
+>
+
+27 
+	~"FÜmD©a.h
+"
+
+29 
+QT_BEGIN_NAMESPACE
+
+
+30 
+şass
+ 
+	gQFe
+;
+
+31 
+şass
+ 
+	gQN‘wÜkR•ly
+;
+
+32 
+QT_END_NAMESPACE
+
+
+34 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+36 
+şass
+ 
+	gResourûHªdË
+;
+
+38 şas 
+	cQN‘wÜkR•lyHªdËr
+ : 
+public
+ 
+QObjeù
+
+
+40 
+Q_OBJECT
+
+
+41 
+public
+:
+
+42 
+	eLßdMode
+ {
+
+43 
+LßdNÜm®
+,
+
+44 
+	gLßdDeã¼ed
+,
+
+45 
+	gLßdResumšg
+
+
+48 
+QN‘wÜkR•lyHªdËr
+(
+ResourûHªdË
+ *
+hªdË
+, 
+LßdMode
+);
+
+49 
+£tLßdMode
+(
+LßdMode
+);
+
+51 
+QN‘wÜkR•ly
+* 
+»¶y
+(ècÚ¡ {  
+	gm_»¶y
+; }
+
+53 
+abÜt
+();
+
+55 
+QN‘wÜkR•ly
+* 
+»Ëa£
+();
+
+57 
+	gsigÇls
+:
+
+58 
+´oûssQueuedI‹ms
+();
+
+60 
+´iv©e
+ 
+	g¦Ùs
+:
+
+61 
+fšish
+();
+
+62 
+£ndRe¥Ú£IfN“ded
+();
+
+63 
+fÜw¬dD©a
+();
+
+64 
+£ndQueuedI‹ms
+();
+
+65 
+u¶ßdProg»ss
+(
+qšt64
+ 
+by‹sS’t
+, qšt64 
+by‹sTÙ®
+);
+
+67 
+	g´iv©e
+:
+
+68 
+¡¬t
+();
+
+69 
+»£tS‹
+();
+
+71 
+QN‘wÜkR•ly
+* 
+	gm_»¶y
+;
+
+72 
+ResourûHªdË
+* 
+	gm_»sourûHªdË
+;
+
+73 
+boŞ
+ 
+	gm_»dœeùed
+;
+
+74 
+boŞ
+ 
+	gm_»¥Ú£S’t
+;
+
+75 
+boŞ
+ 
+	gm_»¥Ú£D©aS’t
+;
+
+76 
+LßdMode
+ 
+	gm_lßdMode
+;
+
+77 
+	gQN‘wÜkAcûssMªag”
+::
+O³¿tiÚ
+ 
+m_m‘hod
+;
+
+78 
+QN‘wÜkReque¡
+ 
+	gm_»que¡
+;
+
+81 
+boŞ
+ 
+	gm_shouldS¹
+;
+
+82 
+boŞ
+ 
+	gm_shouldFšish
+;
+
+83 
+boŞ
+ 
+	gm_shouldS’dRe¥Ú£
+;
+
+84 
+boŞ
+ 
+	gm_shouldFÜw¬dD©a
+;
+
+85 
+	gm_»dœeùiÚTr›s
+;
+
+93 şas 
+	cFÜmD©aIODeviû
+ : 
+public
+ 
+QIODeviû
+ {
+
+94 
+Q_OBJECT
+
+
+95 
+public
+:
+
+96 
+FÜmD©aIODeviû
+(
+FÜmD©a
+*);
+
+97 ~
+FÜmD©aIODeviû
+();
+
+99 
+boŞ
+ 
+isSequ’tŸl
+() const;
+
+101 
+	g´Ùeùed
+:
+
+102 
+qšt64
+ 
+»adD©a
+(*, qint64);
+
+103 
+qšt64
+ 
+wr™eD©a
+(const *, qint64);
+
+105 
+	g´iv©e
+:
+
+106 
+moveToNextEËm’t
+();
+
+107 
+İ’FeFÜCu¼’tEËm’t
+();
+
+109 
+	g´iv©e
+:
+
+110 
+VeùÜ
+<
+FÜmD©aEËm’t
+> 
+m_fÜmEËm’ts
+;
+
+111 
+QFe
+* 
+	gm_cu¼’tFe
+;
+
+112 
+qšt64
+ 
+	gm_cu¼’tD–
+;
+
+	@ResourceError.h
+
+26 #iâdeà
+ResourûE¼Ü_h
+
+
+27 
+	#ResourûE¼Ü_h
+
+
+	)
+
+29 
+	~"ResourûE¼ÜBa£.h
+"
+
+31 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+33 şas 
+	cResourûE¼Ü
+ : 
+public
+ 
+ResourûE¼ÜBa£
+
+
+35 
+public
+:
+
+36 
+ResourûE¼Ü
+()
+
+40 
+ResourûE¼Ü
+(cÚ¡ 
+SŒšg
+& 
+domaš
+, 
+”rÜCode
+, cÚ¡ SŒšg& 
+çšgURL
+, cÚ¡ SŒšg& 
+loÿlizedDesütiÚ
+)
+
+41 : 
+ResourûE¼ÜBa£
+(
+domaš
+, 
+”rÜCode
+, 
+çšgURL
+, 
+loÿlizedDesütiÚ
+)
+
+	@ResourceHandleQt.cpp
+
+2 #ifdeà
+SSLAB__DEBUG
+
+
+3 #iâdeà
+SSLAB__QDATETIME
+
+
+4 
+	#SSLAB__QDATETIME
+
+
+	)
+
+5 
+	~<QD©eTime
+>
+
+9 #ifdeà
+SSLAB__DEBUG
+
+
+10 #iâdeà
+SSLAB__QTHREAD
+
+
+11 
+	#SSLAB__QTHREAD
+
+
+	)
+
+12 
+	~<QTh»ad
+>
+
+44 
+	~"cÚfig.h
+"
+
+45 
+	~"ResourûHªdË.h
+"
+
+47 
+	~"ChromeCl›ÁQt.h
+"
+
+48 
+	~"DocLßd”.h
+"
+
+49 
+	~"F¿me.h
+"
+
+50 
+	~"F¿meLßd”Cl›ÁQt.h
+"
+
+51 
+	~"NÙIm¶em’‹d.h
+"
+
+52 
+	~"Page.h
+"
+
+53 
+	~"QN‘wÜkR•lyHªdËr.h
+"
+
+54 
+	~"ResourûHªdËCl›Á.h
+"
+
+55 
+	~"ResourûHªdËIÁ”Çl.h
+"
+
+56 
+	~"Sh¬edBufãr.h
+"
+
+59 
+	~"qwebäame_p.h
+"
+
+60 
+	~"qweb·ge_p.h
+"
+
+62 
+	~<QAb¡¿ùN‘wÜkCache
+>
+
+63 
+	~<QCÜeAµliÿtiÚ
+>
+
+64 
+	~<QU¾
+>
+
+65 
+	~<QN‘wÜkAcûssMªag”
+>
+
+66 
+	~<QN‘wÜkReque¡
+>
+
+67 
+	~<QN‘wÜkR•ly
+>
+
+69 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+71 şas 
+	cWebCÜeSynchrÚousLßd”
+ : 
+public
+ 
+ResourûHªdËCl›Á
+ {
+
+72 
+public
+:
+
+73 
+WebCÜeSynchrÚousLßd”
+();
+
+75 
+wa™FÜCom¶‘iÚ
+();
+
+77 
+vœtu®
+ 
+didReûiveRe¥Ú£
+(
+ResourûHªdË
+*, cÚ¡ 
+ResourûRe¥Ú£
+&);
+
+78 
+vœtu®
+ 
+didReûiveD©a
+(
+ResourûHªdË
+*, cÚ¡ *, , 
+ËngthReûived
+);
+
+79 
+vœtu®
+ 
+didFšishLßdšg
+(
+ResourûHªdË
+*);
+
+80 
+vœtu®
+ 
+didFa
+(
+ResourûHªdË
+*, cÚ¡ 
+ResourûE¼Ü
+&);
+
+82 
+ResourûRe¥Ú£
+ 
+»sourûRe¥Ú£
+(ècÚ¡ {  
+	gm_»¥Ú£
+; }
+
+83 
+ResourûE¼Ü
+ 
+»sourûE¼Ü
+(ècÚ¡ {  
+	gm_”rÜ
+; }
+
+84 
+	gVeùÜ
+<> 
+d©a
+(ècÚ¡ {  
+	gm_d©a
+; }
+
+86 
+	g´iv©e
+:
+
+87 
+ResourûRe¥Ú£
+ 
+m_»¥Ú£
+;
+
+88 
+ResourûE¼Ü
+ 
+	gm_”rÜ
+;
+
+89 
+	gVeùÜ
+<> 
+	gm_d©a
+;
+
+90 
+QEv’tLoİ
+ 
+	gm_ev’tLoİ
+;
+
+93 
+	gWebCÜeSynchrÚousLßd”
+::
+	$WebCÜeSynchrÚousLßd”
+()
+
+95 #ifdeà
+SSLAB__DEBUG
+
+
+96 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+99 
+	}
+}
+
+101 
+	gWebCÜeSynchrÚousLßd”
+::
+	$didReûiveRe¥Ú£
+(
+ResourûHªdË
+*, cÚ¡ 
+ResourûRe¥Ú£
+& 
+»¥Ú£
+)
+
+103 #ifdeà
+SSLAB__DEBUG
+
+
+104 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+107 
+m_»¥Ú£
+ = 
+»¥Ú£
+;
+
+108 
+	}
+}
+
+110 
+	gWebCÜeSynchrÚousLßd”
+::
+	$didReûiveD©a
+(
+ResourûHªdË
+*, cÚ¡ * 
+d©a
+, 
+Ëngth
+, )
+
+112 #ifdeà
+SSLAB__DEBUG
+
+
+113 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+116 
+m_d©a
+.
+	`­³nd
+(
+d©a
+, 
+Ëngth
+);
+
+117 
+	}
+}
+
+119 
+	gWebCÜeSynchrÚousLßd”
+::
+	$didFšishLßdšg
+(
+ResourûHªdË
+*)
+
+121 #ifdeà
+SSLAB__DEBUG
+
+
+122 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+125 
+m_ev’tLoİ
+.
+	`ex™
+();
+
+126 
+	}
+}
+
+128 
+	gWebCÜeSynchrÚousLßd”
+::
+	$didFa
+(
+ResourûHªdË
+*, cÚ¡ 
+ResourûE¼Ü
+& 
+”rÜ
+)
+
+130 #ifdeà
+SSLAB__DEBUG
+
+
+131 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+134 
+m_”rÜ
+ = 
+”rÜ
+;
+
+135 
+m_ev’tLoİ
+.
+	`ex™
+();
+
+136 
+	}
+}
+
+138 
+	gWebCÜeSynchrÚousLßd”
+::
+	$wa™FÜCom¶‘iÚ
+()
+
+140 #ifdeà
+SSLAB__DEBUG
+
+
+141 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+144 
+m_ev’tLoİ
+.
+	`exec
+(
+QEv’tLoİ
+::
+ExşudeU£rIÅutEv’ts
+);
+
+145 
+	}
+}
+
+147 
+	gResourûHªdËIÁ”Çl
+::~
+	$ResourûHªdËIÁ”Çl
+()
+
+149 #ifdeà
+SSLAB__DEBUG
+
+
+150 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+153 
+	}
+}
+
+155 
+	gResourûHªdË
+::~
+	$ResourûHªdË
+()
+
+157 #ifdeà
+SSLAB__DEBUG
+
+
+158 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+161 ià(
+d
+->
+m_job
+)
+
+162 
+	`ÿnûl
+();
+
+163 
+	}
+}
+
+165 
+boŞ
+ 
+	gResourûHªdË
+::
+	$¡¬t
+(
+F¿me
+* 
+äame
+)
+
+167 #ifdeà
+SSLAB__DEBUG
+
+
+168 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+171 ià(!
+äame
+)
+
+172  
+çl£
+;
+
+174 
+Page
+ *
+·ge
+ = 
+äame
+->
+	`·ge
+();
+
+177 ià(!
+·ge
+)
+
+178  
+çl£
+;
+
+180 ià(!(
+d
+->
+m_u£r
+.
+	`isEm±y
+(è|| d->
+m_·ss
+.isEmpty())) {
+
+183 
+KURL
+ 
+	`u¾W™hC»d’tŸls
+(
+d
+->
+m_»que¡
+.
+	`u¾
+());
+
+184 
+u¾W™hC»d’tŸls
+.
+	`£tU£r
+(
+d
+->
+m_u£r
+);
+
+185 
+u¾W™hC»d’tŸls
+.
+	`£tPass
+(
+d
+->
+m_·ss
+);
+
+186 
+d
+->
+m_»que¡
+.
+	`£tURL
+(
+u¾W™hC»d’tŸls
+);
+
+189 
+	`g‘IÁ”Çl
+()->
+m_äame
+ = 
+¡©ic_ÿ¡
+<
+F¿meLßd”Cl›ÁQt
+*>(
+äame
+->
+	`lßd”
+()->
+	`ş›Á
+())->
+	`webF¿me
+();
+
+190 
+ResourûHªdËIÁ”Çl
+ *
+d
+ = 
+	`g‘IÁ”Çl
+();
+
+191 
+d
+->
+m_job
+ = 
+Ãw
+ 
+	`QN‘wÜkR•lyHªdËr
+(
+this
+, 
+QN‘wÜkR•lyHªdËr
+::
+	`LßdMode
+(d->
+m_deãrsLßdšg
+));
+
+192  
+Œue
+;
+
+193 
+	}
+}
+
+195 
+	gResourûHªdË
+::
+	$ÿnûl
+()
+
+197 #ifdeà
+SSLAB__DEBUG
+
+
+198 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+201 ià(
+d
+->
+m_job
+) {
+
+202 
+d
+->
+m_job
+->
+	`abÜt
+();
+
+203 
+d
+->
+m_job
+ = 0;
+
+205 
+	}
+}
+
+207 
+boŞ
+ 
+	gResourûHªdË
+::
+	$lßdsBlocked
+()
+
+209 #ifdeà
+SSLAB__DEBUG
+
+
+210 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+213  
+çl£
+;
+
+214 
+	}
+}
+
+216 
+boŞ
+ 
+	gResourûHªdË
+::
+	$wlLßdFromCache
+(
+ResourûReque¡
+& 
+»que¡
+, 
+F¿me
+* 
+äame
+)
+
+218 #ifdeà
+SSLAB__DEBUG
+
+
+219 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+222 ià(!
+äame
+)
+
+223  
+çl£
+;
+
+225 
+QN‘wÜkAcûssMªag”
+* 
+mªag”
+ = 
+QWebF¿mePriv©e
+::
+	`k™
+(
+äame
+)->
+	`·ge
+()->
+	`ÃtwÜkAcûssMªag”
+();
+
+226 
+QAb¡¿ùN‘wÜkCache
+* 
+ÿche
+ = 
+mªag”
+->
+	`ÿche
+();
+
+228 ià(!
+ÿche
+)
+
+229  
+çl£
+;
+
+231 
+QN‘wÜkCacheM‘aD©a
+ 
+d©a
+ = 
+ÿche
+->
+	`m‘aD©a
+(
+»que¡
+.
+	`u¾
+());
+
+232 ià(
+d©a
+.
+	`isV®id
+()) {
+
+233 
+»que¡
+.
+	`£tCachePŞicy
+(
+R‘uºCacheD©aDÚtLßd
+);
+
+234  
+Œue
+;
+
+237  
+çl£
+;
+
+238 
+	}
+}
+
+240 
+boŞ
+ 
+	gResourûHªdË
+::
+	$suµÜtsBufã»dD©a
+()
+
+242 #ifdeà
+SSLAB__DEBUG
+
+
+243 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+246  
+çl£
+;
+
+247 
+	}
+}
+
+249 
+	gPassRefPŒ
+<
+	gSh¬edBufãr
+> 
+	gResourûHªdË
+::
+	$bufã»dD©a
+()
+
+251 #ifdeà
+SSLAB__DEBUG
+
+
+252 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+255 
+	`ASSERT_NOT_REACHED
+();
+
+257 
+	}
+}
+
+259 
+	gResourûHªdË
+::
+lßdResourûSynchrÚou¦y
+(cÚ¡ 
+ResourûReque¡
+& 
+»que¡
+, 
+StÜedC»d’tŸls
+ , 
+ResourûE¼Ü
+& 
+”rÜ
+, 
+ResourûRe¥Ú£
+& 
+»¥Ú£
+, 
+VeùÜ
+<>& 
+d©a
+, 
+F¿me
+* 
+äame
+)
+
+261 
+WebCÜeSynchrÚousLßd”
+ 
+	gsyncLßd”
+;
+
+262 
+ResourûHªdË
+ 
+hªdË
+(
+»que¡
+, &
+syncLßd”
+, 
+Œue
+, 
+çl£
+);
+
+264 
+ResourûHªdËIÁ”Çl
+ *
+	gd
+ = 
+hªdË
+.
+g‘IÁ”Çl
+();
+
+265 ià(!(
+	gd
+->
+	gm_u£r
+.
+isEm±y
+(è|| d->
+	gm_·ss
+.isEmpty())) {
+
+268 
+KURL
+ 
+u¾W™hC»d’tŸls
+(
+d
+->
+m_»que¡
+.
+u¾
+());
+
+269 
+	gu¾W™hC»d’tŸls
+.
+£tU£r
+(
+d
+->
+m_u£r
+);
+
+270 
+	gu¾W™hC»d’tŸls
+.
+£tPass
+(
+d
+->
+m_·ss
+);
+
+271 
+	gd
+->
+	gm_»que¡
+.
+£tURL
+(
+u¾W™hC»d’tŸls
+);
+
+273 
+	gd
+->
+	gm_äame
+ = 
+¡©ic_ÿ¡
+<
+F¿meLßd”Cl›ÁQt
+*>(
+äame
+->
+lßd”
+()->
+ş›Á
+())->
+webF¿me
+();
+
+274 
+	gd
+->
+	gm_job
+ = 
+Ãw
+ 
+QN‘wÜkR•lyHªdËr
+(&
+hªdË
+, QN‘wÜkR•lyHªdËr::
+LßdNÜm®
+);
+
+276 
+	gsyncLßd”
+.
+wa™FÜCom¶‘iÚ
+();
+
+277 
+	g”rÜ
+ = 
+syncLßd”
+.
+»sourûE¼Ü
+();
+
+278 
+	gd©a
+ = 
+syncLßd”
+.
+d©a
+();
+
+279 
+	g»¥Ú£
+ = 
+syncLßd”
+.
+»sourûRe¥Ú£
+();
+
+283 
+	gResourûHªdË
+::
+	$£tDeãrsLßdšg
+(
+boŞ
+ 
+deãrs
+)
+
+285 #ifdeà
+SSLAB__DEBUG
+
+
+286 
+	`qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+	`cu¼’tD©eTime
+().
+	`toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+	`toAscii
+().
+	`d©a
+(), 
+QTh»ad
+::
+	`cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+289 
+d
+->
+m_deãrsLßdšg
+ = 
+deãrs
+;
+
+291 ià(
+d
+->
+m_job
+)
+
+292 
+d
+->
+m_job
+->
+	`£tLßdMode
+(
+QN‘wÜkR•lyHªdËr
+::
+	`LßdMode
+(
+deãrs
+));
+
+293 
+	}
+}
+
+	@ResourceRequest.h
+
+27 #iâdeà
+ResourûReque¡_h
+
+
+28 
+	#ResourûReque¡_h
+
+
+	)
+
+30 
+	~"ResourûReque¡Ba£.h
+"
+
+32 
+QT_BEGIN_NAMESPACE
+
+
+33 
+şass
+ 
+	gQN‘wÜkReque¡
+;
+
+34 
+şass
+ 
+	gQObjeù
+;
+
+35 
+QT_END_NAMESPACE
+
+
+37 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+39 şas 
+	cResourûReque¡
+ : 
+public
+ 
+ResourûReque¡Ba£
+ {
+
+40 
+public
+:
+
+41 
+ResourûReque¡
+(cÚ¡ 
+SŒšg
+& 
+u¾
+)
+
+42 : 
+ResourûReque¡Ba£
+(
+KURL
+(
+P¬£dURLSŒšg
+, 
+u¾
+), 
+U£PrÙocŞCachePŞicy
+)
+
+46 
+ResourûReque¡
+(cÚ¡ 
+KURL
+& 
+u¾
+)
+
+47 : 
+ResourûReque¡Ba£
+(
+u¾
+, 
+U£PrÙocŞCachePŞicy
+)
+
+51 
+ResourûReque¡
+(cÚ¡ 
+KURL
+& 
+u¾
+, cÚ¡ 
+SŒšg
+& 
+»ã¼”
+, 
+ResourûReque¡CachePŞicy
+ 
+pŞicy
+ = 
+U£PrÙocŞCachePŞicy
+)
+
+52 : 
+ResourûReque¡Ba£
+(
+u¾
+, 
+pŞicy
+)
+
+54 
+£tHTTPReã¼”
+(
+»ã¼”
+);
+
+57 
+ResourûReque¡
+()
+
+58 : 
+ResourûReque¡Ba£
+(
+KURL
+(), 
+U£PrÙocŞCachePŞicy
+)
+
+62 
+QN‘wÜkReque¡
+ 
+toN‘wÜkReque¡
+(
+QObjeù
+* 
+Üigš©šgObjeù
+) const;
+
+64 
+	g´iv©e
+:
+
+65 
+ä›nd
+ 
+şass
+ 
+ResourûReque¡Ba£
+;
+
+67 
+doUpd©ePÏtfÜmReque¡
+() {}
+
+68 
+doUpd©eResourûReque¡
+() {}
+
+	@ResourceRequestQt.cpp
+
+2 #ifdeà
+SSLAB__DEBUG
+
+
+3 #iâdeà
+SSLAB__QDATETIME
+
+
+4 
+	#SSLAB__QDATETIME
+
+
+	)
+
+5 
+	~<QD©eTime
+>
+
+9 #ifdeà
+SSLAB__DEBUG
+
+
+10 #iâdeà
+SSLAB__QTHREAD
+
+
+11 
+	#SSLAB__QTHREAD
+
+
+	)
+
+12 
+	~<QTh»ad
+>
+
+34 
+	~"cÚfig.h
+"
+
+35 
+	~"ResourûReque¡.h
+"
+
+37 
+	~<qglob®.h
+>
+
+39 
+	~<QN‘wÜkReque¡
+>
+
+40 
+	~<QU¾
+>
+
+42 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+51 
+š™ŸlizeMaximumHTTPCÚÃùiÚCouÁP”Ho¡
+()
+
+53 #ifdeà
+SSLAB__DEBUG
+
+
+54 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+57 #ifdeà
+Q_OS_SYMBIAN
+
+
+64 
+QN‘wÜkReque¡
+ 
+	gResourûReque¡
+::
+toN‘wÜkReque¡
+(
+QObjeù
+* 
+Üigš©šgF¿me
+) const
+
+66 #ifdeà
+SSLAB__DEBUG
+
+
+67 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+70 
+QN‘wÜkReque¡
+ 
+	g»que¡
+;
+
+71 
+	g»que¡
+.
+£tU¾
+(
+u¾
+());
+
+72 #ià
+QT_VERSION
+ >ğ
+QT_VERSION_CHECK
+(4, 6, 0)
+
+73 
+	g»que¡
+.
+£tOrigš©šgObjeù
+(
+Üigš©šgF¿me
+);
+
+76 cÚ¡ 
+	gHTTPH—d”M­
+ &
+	gh—d”s
+ = 
+h‰pH—d”F›lds
+();
+
+77 
+	gHTTPH—d”M­
+::
+cÚ¡_™”©Ü
+ 
+™
+ = 
+h—d”s
+.
+begš
+(), 
+	g’d
+ = h—d”s.
+’d
+();
+
+78 
+	g™
+ !ğ
+’d
+; ++it) {
+
+79 
+QBy‹A¼ay
+ 
+	gÇme
+ = 
+QSŒšg
+(
+™
+->
+fœ¡
+).
+toAscii
+();
+
+80 
+QBy‹A¼ay
+ 
+	gv®ue
+ = 
+QSŒšg
+(
+™
+->
+£cÚd
+).
+toAscii
+();
+
+83 ià(!
+	gv®ue
+.
+isNuÎ
+())
+
+84 
+	g»que¡
+.
+£tRawH—d”
+(
+Çme
+, 
+v®ue
+);
+
+86 
+	g»que¡
+.
+£tRawH—d”
+(
+Çme
+, "");
+
+89 
+ÿchePŞicy
+()) {
+
+90 
+	gR–ßdIgnÜšgCacheD©a
+:
+
+91 
+»que¡
+.
+£tA‰ribu‹
+(
+QN‘wÜkReque¡
+::
+CacheLßdCÚŒŞA‰ribu‹
+, QN‘wÜkReque¡::
+AlwaysN‘wÜk
+);
+
+93 
+	gR‘uºCacheD©aEl£Lßd
+:
+
+94 
+»que¡
+.
+£tA‰ribu‹
+(
+QN‘wÜkReque¡
+::
+CacheLßdCÚŒŞA‰ribu‹
+, QN‘wÜkReque¡::
+P»ãrCache
+);
+
+96 
+	gR‘uºCacheD©aDÚtLßd
+:
+
+97 
+»que¡
+.
+£tA‰ribu‹
+(
+QN‘wÜkReque¡
+::
+CacheLßdCÚŒŞA‰ribu‹
+, QN‘wÜkReque¡::
+AlwaysCache
+);
+
+99 
+	gU£PrÙocŞCachePŞicy
+:
+
+105  
+	g»que¡
+;
+
+	@ResourceResponse.h
+
+26 #iâdeà
+ResourûRe¥Ú£_h
+
+
+27 
+	#ResourûRe¥Ú£_h
+
+
+	)
+
+29 
+	~"ResourûRe¥Ú£Ba£.h
+"
+
+31 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+33 şas 
+	cResourûRe¥Ú£
+ : 
+public
+ 
+ResourûRe¥Ú£Ba£
+ {
+
+34 
+public
+:
+
+35 
+ResourûRe¥Ú£
+()
+
+39 
+ResourûRe¥Ú£
+(cÚ¡ 
+KURL
+& 
+u¾
+, cÚ¡ 
+SŒšg
+& 
+mimeTy³
+, 
+ex³ùedL’gth
+, cÚ¡ SŒšg& 
+‹xtEncodšgName
+, cÚ¡ SŒšg& 
+f’ame
+)
+
+40 : 
+ResourûRe¥Ú£Ba£
+(
+u¾
+, 
+mimeTy³
+, 
+ex³ùedL’gth
+, 
+‹xtEncodšgName
+, 
+f’ame
+)
+
+	@SocketStreamError.h
+
+31 #iâdeà
+Sock‘SŒ—mE¼Ü_h
+
+
+32 
+	#Sock‘SŒ—mE¼Ü_h
+
+
+	)
+
+34 
+	~"Sock‘SŒ—mE¼ÜBa£.h
+"
+
+36 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+38 şas 
+	cSock‘SŒ—mE¼Ü
+ : 
+public
+ 
+Sock‘SŒ—mE¼ÜBa£
+ {
+
+39 
+public
+:
+
+40 
+Sock‘SŒ—mE¼Ü
+() { }
+
+41 
+ex¶ic™
+ 
+Sock‘SŒ—mE¼Ü
+(
+”rÜCode
+)
+
+42 : 
+Sock‘SŒ—mE¼ÜBa£
+(
+”rÜCode
+)
+
+	@SocketStreamHandle.h
+
+33 #iâdeà
+Sock‘SŒ—mHªdË_h
+
+
+34 
+	#Sock‘SŒ—mHªdË_h
+
+
+	)
+
+36 
+	~"Sock‘SŒ—mHªdËBa£.h
+"
+
+38 
+	~<wtf/PassRefPŒ.h
+>
+
+39 
+	~<wtf/RefCouÁed.h
+>
+
+41 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+43 
+şass
+ 
+	gAuth’tiÿtiÚCh®Ënge
+;
+
+44 
+şass
+ 
+	gC»d’tŸl
+;
+
+45 
+şass
+ 
+	gSock‘SŒ—mHªdËCl›Á
+;
+
+46 
+şass
+ 
+	gSock‘SŒ—mHªdËPriv©e
+;
+
+48 
+şass
+ 
+	gSock‘SŒ—mHªdË
+ : 
+public
+ 
+RefCouÁed
+<
+Sock‘SŒ—mHªdË
+>,…ubliø
+	gSock‘SŒ—mHªdËBa£
+ {
+
+49 
+	gpublic
+:
+
+50 
+PassRefPŒ
+<
+Sock‘SŒ—mHªdË
+> 
+ü—‹
+(cÚ¡ 
+KURL
+& 
+u¾
+, 
+Sock‘SŒ—mHªdËCl›Á
+* 
+ş›Á
+è{  
+adİtRef
+(
+Ãw
+ SocketStreamHandle(url, client)); }
+
+52 
+	gvœtu®
+ ~
+Sock‘SŒ—mHªdË
+();
+
+54 
+	g´Ùeùed
+:
+
+55 
+vœtu®
+ 
+¶©fÜmS’d
+(cÚ¡ * 
+d©a
+, 
+Ëngth
+);
+
+56 
+vœtu®
+ 
+¶©fÜmClo£
+();
+
+58 
+	g´iv©e
+:
+
+59 
+Sock‘SŒ—mHªdË
+(cÚ¡ 
+KURL
+&, 
+Sock‘SŒ—mHªdËCl›Á
+*);
+
+62 
+didReûiveAuth’tiÿtiÚCh®Ënge
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&);
+
+63 
+»ûivedC»d’tŸl
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&, cÚ¡ 
+C»d’tŸl
+&);
+
+64 
+»ûivedReque¡ToCÚtšueW™houtC»d’tŸl
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&);
+
+65 
+»ûivedCªûÎ©iÚ
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&);
+
+66 
+Sock‘SŒ—mHªdËPriv©e
+* 
+	gm_p
+;
+
+67 
+ä›nd
+ 
+şass
+ 
+	gSock‘SŒ—mHªdËPriv©e
+;
+
+	@SocketStreamHandlePrivate.h
+
+31 #iâdeà
+Sock‘SŒ—mHªdËPriv©e_h
+
+
+32 
+	#Sock‘SŒ—mHªdËPriv©e_h
+
+
+	)
+
+34 
+	~"Sock‘SŒ—mHªdËBa£.h
+"
+
+36 
+	~<QS¦Sock‘
+>
+
+37 
+	~<QTıSock‘
+>
+
+39 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+41 
+şass
+ 
+	gAuth’tiÿtiÚCh®Ënge
+;
+
+42 
+şass
+ 
+	gC»d’tŸl
+;
+
+43 
+şass
+ 
+	gSock‘SŒ—mHªdËCl›Á
+;
+
+44 
+şass
+ 
+	gSock‘SŒ—mHªdËPriv©e
+;
+
+46 şas 
+	cSock‘SŒ—mHªdËPriv©e
+ : 
+public
+ 
+QObjeù
+ {
+
+47 
+Q_OBJECT
+
+
+48 
+public
+:
+
+49 
+Sock‘SŒ—mHªdËPriv©e
+(
+Sock‘SŒ—mHªdË
+*, cÚ¡ 
+KURL
+&);
+
+50 ~
+Sock‘SŒ—mHªdËPriv©e
+();
+
+52 
+public
+ 
+	g¦Ùs
+:
+
+53 
+sock‘CÚÃùed
+();
+
+54 
+sock‘R—dyR—d
+();
+
+55 
+£nd
+(cÚ¡ * 
+d©a
+, 
+Ën
+);
+
+56 
+şo£
+();
+
+57 
+sock‘S’td©a
+();
+
+58 
+sock‘Clo£d
+();
+
+59 
+sock‘E¼Ü
+(
+QAb¡¿ùSock‘
+::
+Sock‘E¼Ü
+);
+
+60 
+sock‘Clo£dC®lback
+();
+
+61 
+sock‘E¼ÜC®lback
+();
+
+62 #iâdeà
+QT_NO_OPENSSL
+
+
+63 
+sock‘S¦E¼Üs
+(cÚ¡ 
+QLi¡
+<
+QS¦E¼Ü
+>&);
+
+65 
+	gpublic
+:
+
+66 
+QTıSock‘
+* 
+m_sock‘
+;
+
+67 
+Sock‘SŒ—mHªdË
+* 
+	gm_¡»amHªdË
+;
+
+	@SocketStreamHandleQt.cpp
+
+2 #ifdeà
+SSLAB__DEBUG
+
+
+3 #iâdeà
+SSLAB__QDATETIME
+
+
+4 
+	#SSLAB__QDATETIME
+
+
+	)
+
+5 
+	~<QD©eTime
+>
+
+9 #ifdeà
+SSLAB__DEBUG
+
+
+10 #iâdeà
+SSLAB__QTHREAD
+
+
+11 
+	#SSLAB__QTHREAD
+
+
+	)
+
+12 
+	~<QTh»ad
+>
+
+46 
+	~"cÚfig.h
+"
+
+47 
+	~"Sock‘SŒ—mHªdË.h
+"
+
+49 
+	~"KURL.h
+"
+
+50 
+	~"Loggšg.h
+"
+
+51 
+	~"NÙIm¶em’‹d.h
+"
+
+52 
+	~"Sock‘SŒ—mHªdËCl›Á.h
+"
+
+53 
+	~"Sock‘SŒ—mHªdËPriv©e.h
+"
+
+55 
+Çme¥aû
+ 
+	gWebCÜe
+ {
+
+57 
+	gSock‘SŒ—mHªdËPriv©e
+::
+Sock‘SŒ—mHªdËPriv©e
+(
+Sock‘SŒ—mHªdË
+* 
+¡»amHªdË
+, cÚ¡ 
+KURL
+& 
+u¾
+è: 
+QObjeù
+()
+
+59 #ifdeà
+SSLAB__DEBUG
+
+
+60 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+63 
+	gm_¡»amHªdË
+ = 
+¡»amHªdË
+;
+
+64 
+	gm_sock‘
+ = 0;
+
+65 
+boŞ
+ 
+	gisSecu»
+ = 
+u¾
+.
+´ÙocŞIs
+("wss");
+
+67 ià(
+	gisSecu»
+) {
+
+68 #iâdeà
+QT_NO_OPENSSL
+
+
+69 
+	gm_sock‘
+ = 
+Ãw
+ 
+QS¦Sock‘
+(
+this
+);
+
+72 
+	gm_sock‘
+ = 
+Ãw
+ 
+QTıSock‘
+(
+this
+);
+
+74 ià(!
+	gm_sock‘
+)
+
+77 
+cÚÃù
+(
+m_sock‘
+, 
+SIGNAL
+(
+cÚÃùed
+()), 
+this
+, 
+SLOT
+(
+sock‘CÚÃùed
+()));
+
+78 
+cÚÃù
+(
+m_sock‘
+, 
+SIGNAL
+(
+»adyR—d
+()), 
+this
+, 
+SLOT
+(
+sock‘R—dyR—d
+()));
+
+79 
+cÚÃù
+(
+m_sock‘
+, 
+SIGNAL
+(
+discÚÃùed
+()), 
+this
+, 
+SLOT
+(
+sock‘Clo£d
+()));
+
+80 
+cÚÃù
+(
+m_sock‘
+, 
+SIGNAL
+(
+”rÜ
+(
+QAb¡¿ùSock‘
+::
+Sock‘E¼Ü
+)), 
+this
+, 
+SLOT
+(
+sock‘E¼Ü
+(QAbstractSocket::SocketError)));
+
+81 ià(
+	gisSecu»
+)
+
+82 
+cÚÃù
+(
+m_sock‘
+, 
+SIGNAL
+(
+s¦E¼Üs
+(cÚ¡ 
+QLi¡
+<
+QS¦E¼Ü
+>&)), 
+this
+, 
+SLOT
+(
+sock‘S¦E¼Üs
+(const QList<QSslError>&)));
+
+84 
+	gpÜt
+ = 
+u¾
+.
+hasPÜt
+(è? u¾.
+pÜt
+(è: (
+isSecu»
+ ? 443 : 80);
+
+86 
+QSŒšg
+ 
+	gho¡
+ = 
+u¾
+.
+ho¡
+();
+
+87 ià(
+	gisSecu»
+) {
+
+88 #iâdeà
+QT_NO_OPENSSL
+
+
+89 
+	g¡©ic_ÿ¡
+<
+	gQS¦Sock‘
+*>(
+	gm_sock‘
+)->
+cÚÃùToHo¡Enüy±ed
+(
+ho¡
+, 
+pÜt
+);
+
+92 
+	gm_sock‘
+->
+cÚÃùToHo¡
+(
+ho¡
+, 
+pÜt
+);
+
+95 
+	gSock‘SŒ—mHªdËPriv©e
+::~
+Sock‘SŒ—mHªdËPriv©e
+()
+
+97 #ifdeà
+SSLAB__DEBUG
+
+
+98 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+101 
+Q_ASSERT
+(!(
+m_sock‘
+ && m_sock‘->
+¡©e
+(è=ğ
+QAb¡¿ùSock‘
+::
+CÚÃùedS‹
+));
+
+104 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘CÚÃùed
+()
+
+106 #ifdeà
+SSLAB__DEBUG
+
+
+107 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+110 ià(
+	gm_¡»amHªdË
+ && m_¡»amHªdË->
+ş›Á
+()) {
+
+111 
+	gm_¡»amHªdË
+->
+	gm_¡©e
+ = 
+Sock‘SŒ—mHªdËBa£
+::
+O³n
+;
+
+112 
+	gm_¡»amHªdË
+->
+ş›Á
+()->
+didO³n
+(
+m_¡»amHªdË
+);
+
+116 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘R—dyR—d
+()
+
+118 #ifdeà
+SSLAB__DEBUG
+
+
+119 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+122 ià(
+	gm_¡»amHªdË
+ && m_¡»amHªdË->
+ş›Á
+()) {
+
+123 
+QBy‹A¼ay
+ 
+	gd©a
+ = 
+m_sock‘
+->
+»ad
+(m_sock‘->
+by‹sAvaabË
+());
+
+124 
+	gm_¡»amHªdË
+->
+ş›Á
+()->
+didReûiveD©a
+(
+m_¡»amHªdË
+, 
+d©a
+.
+cÚ¡D©a
+(), d©a.
+size
+());
+
+128 
+	gSock‘SŒ—mHªdËPriv©e
+::
+£nd
+(cÚ¡ * 
+d©a
+, 
+Ën
+)
+
+130 #ifdeà
+SSLAB__DEBUG
+
+
+131 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+134 ià(!
+	gm_sock‘
+ || m_sock‘->
+¡©e
+(è!ğ
+QAb¡¿ùSock‘
+::
+CÚÃùedS‹
+)
+
+136 
+qušt64
+ 
+	g£ÁSize
+ = 
+m_sock‘
+->
+wr™e
+(
+d©a
+, 
+Ën
+);
+
+137 
+	gQM‘aObjeù
+::
+švokeM‘hod
+(
+this
+, "sock‘S’tD©a", 
+Qt
+::
+QueuedCÚÃùiÚ
+);
+
+138  
+	g£ÁSize
+;
+
+141 
+	gSock‘SŒ—mHªdËPriv©e
+::
+şo£
+()
+
+143 #ifdeà
+SSLAB__DEBUG
+
+
+144 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+147 ià(
+	gm_sock‘
+ && m_sock‘->
+¡©e
+(è=ğ
+QAb¡¿ùSock‘
+::
+CÚÃùedS‹
+)
+
+148 
+m_sock‘
+->
+şo£
+();
+
+151 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘S’td©a
+()
+
+153 #ifdeà
+SSLAB__DEBUG
+
+
+154 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+157 ià(
+	gm_¡»amHªdË
+)
+
+158 
+	gm_¡»amHªdË
+->
+£ndP’dšgD©a
+();
+
+161 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘Clo£d
+()
+
+163 #ifdeà
+SSLAB__DEBUG
+
+
+164 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+167 
+	gQM‘aObjeù
+::
+švokeM‘hod
+(
+this
+, "sock‘Clo£dC®lback", 
+Qt
+::
+QueuedCÚÃùiÚ
+);
+
+170 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘E¼Ü
+(
+QAb¡¿ùSock‘
+::
+Sock‘E¼Ü
+ 
+”rÜ
+)
+
+172 #ifdeà
+SSLAB__DEBUG
+
+
+173 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+176 
+	gQM‘aObjeù
+::
+švokeM‘hod
+(
+this
+, "sock‘E¼ÜC®lback", 
+Qt
+::
+QueuedCÚÃùiÚ
+, 
+Q_ARG
+(, 
+”rÜ
+));
+
+179 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘Clo£dC®lback
+()
+
+181 #ifdeà
+SSLAB__DEBUG
+
+
+182 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+185 ià(
+	gm_¡»amHªdË
+ && m_¡»amHªdË->
+ş›Á
+()) {
+
+186 
+Sock‘SŒ—mHªdË
+* 
+	g¡»amHªdË
+ = 
+m_¡»amHªdË
+;
+
+187 
+	gm_¡»amHªdË
+ = 0;
+
+189 
+	g¡»amHªdË
+->
+ş›Á
+()->
+didClo£
+(
+¡»amHªdË
+);
+
+193 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘E¼ÜC®lback
+(
+”rÜ
+)
+
+195 #ifdeà
+SSLAB__DEBUG
+
+
+196 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+200 ià(
+	gm_¡»amHªdË
+ && m_¡»amHªdË->
+ş›Á
+()) {
+
+201 
+Sock‘SŒ—mHªdË
+* 
+	g¡»amHªdË
+ = 
+m_¡»amHªdË
+;
+
+202 
+	gm_¡»amHªdË
+ = 0;
+
+204 
+	g¡»amHªdË
+->
+ş›Á
+()->
+didClo£
+(
+¡»amHªdË
+);
+
+208 #iâdeà
+QT_NO_OPENSSL
+
+
+209 
+	gSock‘SŒ—mHªdËPriv©e
+::
+sock‘S¦E¼Üs
+(cÚ¡ 
+QLi¡
+<
+QS¦E¼Ü
+>&)
+
+211 #ifdeà
+SSLAB__DEBUG
+
+
+212 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+218 
+	g¡©ic_ÿ¡
+<
+	gQS¦Sock‘
+*>(
+	gm_sock‘
+)->
+ignÜeS¦E¼Üs
+();
+
+222 
+	gSock‘SŒ—mHªdË
+::
+Sock‘SŒ—mHªdË
+(cÚ¡ 
+KURL
+& 
+u¾
+, 
+Sock‘SŒ—mHªdËCl›Á
+* 
+ş›Á
+)
+
+223 : 
+Sock‘SŒ—mHªdËBa£
+(
+u¾
+, 
+ş›Á
+)
+
+225 #ifdeà
+SSLAB__DEBUG
+
+
+226 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+229 
+LOG
+(
+N‘wÜk
+, "Sock‘SŒ—mHªdË %°Ãw cl›Á %p", 
+this
+, 
+m_ş›Á
+);
+
+230 
+	gm_p
+ = 
+Ãw
+ 
+Sock‘SŒ—mHªdËPriv©e
+(
+this
+, 
+u¾
+);
+
+233 
+	gSock‘SŒ—mHªdË
+::~
+Sock‘SŒ—mHªdË
+()
+
+235 #ifdeà
+SSLAB__DEBUG
+
+
+236 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+239 
+LOG
+(
+N‘wÜk
+, "Sock‘SŒ—mHªdË %°d–‘e", 
+this
+);
+
+240 
+£tCl›Á
+(0);
+
+241 
+d–‘e
+ 
+	gm_p
+;
+
+244 
+	gSock‘SŒ—mHªdË
+::
+¶©fÜmS’d
+(cÚ¡ * 
+d©a
+, 
+Ën
+)
+
+246 #ifdeà
+SSLAB__DEBUG
+
+
+247 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+250 
+LOG
+(
+N‘wÜk
+, "Sock‘SŒ—mHªdË %°¶©fÜmS’d", 
+this
+);
+
+251  
+	gm_p
+->
+£nd
+(
+d©a
+, 
+Ën
+);
+
+254 
+	gSock‘SŒ—mHªdË
+::
+¶©fÜmClo£
+()
+
+256 #ifdeà
+SSLAB__DEBUG
+
+
+257 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+260 
+LOG
+(
+N‘wÜk
+, "Sock‘SŒ—mHªdË %°¶©fÜmClo£", 
+this
+);
+
+261 
+	gm_p
+->
+şo£
+();
+
+264 
+	gSock‘SŒ—mHªdË
+::
+didReûiveAuth’tiÿtiÚCh®Ënge
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&)
+
+266 #ifdeà
+SSLAB__DEBUG
+
+
+267 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+270 
+nÙIm¶em’‹d
+();
+
+273 
+	gSock‘SŒ—mHªdË
+::
+»ûivedC»d’tŸl
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&, cÚ¡ 
+C»d’tŸl
+&)
+
+275 #ifdeà
+SSLAB__DEBUG
+
+
+276 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+279 
+nÙIm¶em’‹d
+();
+
+282 
+	gSock‘SŒ—mHªdË
+::
+»ûivedReque¡ToCÚtšueW™houtC»d’tŸl
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&)
+
+284 #ifdeà
+SSLAB__DEBUG
+
+
+285 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+288 
+nÙIm¶em’‹d
+();
+
+291 
+	gSock‘SŒ—mHªdË
+::
+»ûivedCªûÎ©iÚ
+(cÚ¡ 
+Auth’tiÿtiÚCh®Ënge
+&)
+
+293 #ifdeà
+SSLAB__DEBUG
+
+
+294 
+qW¬nšg
+("[s¦ab][%s][tid %lu] %s:%d:%s",
+QD©eTime
+::
+cu¼’tD©eTime
+().
+toSŒšg
+("dd.MM.yyy hh:mm:ss.zzz").
+toAscii
+().
+d©a
+(), 
+QTh»ad
+::
+cu¼’tTh»adId
+(), 
+__FILE__
+,
+__LINE__
+,
+__func__
+);
+
+297 
+nÙIm¶em’‹d
+();
+
+302 
+	~"moc_Sock‘SŒ—mHªdËPriv©e.ıp
+"
+
+	@
+1
+.
+1
+/usr/include
+16
+363
+AuthenticationChallenge.h
+DnsPrefetchHelper.cpp
+DnsPrefetchHelper.h
+NetworkStateNotifierPrivate.h
+NetworkStateNotifierQt.cpp
+QNetworkReplyHandler.cpp
+QNetworkReplyHandler.h
+ResourceError.h
+ResourceHandleQt.cpp
+ResourceRequest.h
+ResourceRequestQt.cpp
+ResourceResponse.h
+SocketStreamError.h
+SocketStreamHandle.h
+SocketStreamHandlePrivate.h
+SocketStreamHandleQt.cpp

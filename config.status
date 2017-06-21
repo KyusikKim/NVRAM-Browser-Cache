@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ "$#" -gt 0 ]; then
+  /qt/qt4.7.4/configure  -confirm-license "$@"
+else
+  /qt/qt4.7.4/configure  -confirm-license
+fi

@@ -1,0 +1,8 @@
+19:20:21 clone(Process 8055 attached (waiting for parent)
+[pid  8055] 19:20:21 clone( <unfinished ...>
+[pid  8054] 19:20:21 clone(Process 8057 attached (waiting for parent)
+[pid  8054] 19:20:21 clone(Process 8061 attached (waiting for parent)
+[pid  8054] 19:20:21 clone(Process 8062 attached (waiting for parent)
+[pid  8054] 19:20:21 clone(Process 8063 attached (waiting for parent)
+[pid  8054] 19:20:21 clone(Process 8064 attached
+[pid  8064] 19:20:21 clone(Process 8065 attached
